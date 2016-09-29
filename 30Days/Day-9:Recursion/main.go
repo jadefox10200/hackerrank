@@ -1,0 +1,17 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n int
+	fmt.Scan(&n)
+	x := factorial(n)
+	fmt.Println(x)
+}
+
+func factorial(n int) int {
+	if n <= 1 {
+		return 1
+	}
+	return n * factorial(n-1)
+}
